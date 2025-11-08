@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <h1>Hello, I'm Joseph 👋</h1>
+  <p>Aspiring AWS Solutions Architect / DevOps Engineer building a hands-on portfolio.</p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <ul>
+    {% for skill in skills %}
+      <li>{{ skill }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>Featured Projects</h2>
+  <div class="cards">
+    {% for project in projects %}
+      <div class="card">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.desc }}</p>
+        <a href="{{ project.link }}" target="_blank">View on GitHub →</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
