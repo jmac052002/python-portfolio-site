@@ -1,0 +1,40 @@
+
+---
+
+## 2) `.gitignore`
+
+This will keep your venv, Python cache, and editor junk out of Git.
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+.env
+.venv/
+ENV/
+env/
+venv/
+
+# VS Code / editors
+.vscode/
+.idea/
+
+# Byte-compiled / packaging
+*.egg-info/
+dist/
+build/
+
+# Mac / OS
+.DS_Store
+
+# pytest / coverage (if added later)
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Flask instance folder (if you ever add it)
+instance/
