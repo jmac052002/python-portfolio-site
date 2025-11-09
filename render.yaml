@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: python-portfolio-site
+    runtime: python
+    repo: https://github.com/jmac052002/python-portfolio-site
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    plan: free
+    envVars: []
